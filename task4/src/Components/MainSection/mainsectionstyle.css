@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.mainSectionContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+ 
+ 
+}
+
+.mainContainerDiv {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 55vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    color: #202329;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* .title {
+    display: flex;
+    width: 95%;
+    height: 40vh;
+    padding: 1rem;
+    color: #202329;
+    background-image: url(../../../public/19.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .1;
+}
+
+.title h1 {
+    display: flex;
+    font-size: 5.5rem;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: black;
+    opacity: 1;
+   
+} */
+
+.title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../public/19.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.1; 
+    z-index: 1; 
+}
+
+.title h1 {
+    display: flex;
+    font-size: 5.5rem;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #202329;
+    z-index: 2; 
+    position: relative; 
+}
+
+.filterContainer {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding: 3rem;
+}
+
+
+
+
+@media (max-width: 1200px) {
+    .title h1 {
+        font-size: 4rem;
+    }
+    
+    .filterContainer {
+        gap: 3rem;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mainContainerDiv {
+        height: 57vh;
+    }
+
+    .title h1 {
+        font-size: 3rem;
+    }
+
+    .filterContainer {
+        flex-direction: column;
+        gap: 1.7rem;
+        padding: 1.5rem;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 680px) {
+    .mainContainerDiv {
+        height: 63vh;
+    }
+}
+
+@media (max-width: 480px) {
+
+
+    .mainContainerDiv {
+        height: 60vh;
+   
+    }
+   
+
+    .title h1 {
+        font-size: 2.5rem;
+        flex-wrap: wrap;
+    }
+
+    .filterContainer {
+        gap: 1rem;
+        padding: 1rem;
+    }
+}

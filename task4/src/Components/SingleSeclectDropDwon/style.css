@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dropDownContainer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #272b33;
+    border: 1px solid black;
+    height: auto;
+}
+
+.dropDown {
+    width: 10rem;
+    height: 3rem;
+    background-color: #272b33;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    color: white;
+}
+
+.dropDownContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    background-color: #272b33;
+    color: white;
+}
+
+.dropDownContentRow {
+    background-color: #272b33;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    border: 1px solid white;
+}
+
+.dropDownContentRow:hover {
+    background-color: orange;
+}
+
+.dropDownListContainer {
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .dropDown {
+        width: 8rem;
+        height: 2.5rem;
+    }
+
+    .dropDownContentRow {
+        padding-top: 0.15rem;
+        padding-bottom: 0.15rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .dropDown {
+        width: 6rem;
+        height: 2rem;
+    }
+
+    .dropDownContentRow {
+        flex-direction: column;
+        padding-top: 0.1rem;
+        padding-bottom: 0.1rem;
+        justify-content: center;
+        align-items: center;
+    }
+}
